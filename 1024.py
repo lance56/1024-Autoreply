@@ -251,7 +251,7 @@ if __name__ == "__main__":
                     au=''
     m=auto.getnumber()
     auto.gettodaylist()
-    #回
+    #回复
     sj = random.randint(2,5)
     print(sj)
     while n<sj and suc is False:
