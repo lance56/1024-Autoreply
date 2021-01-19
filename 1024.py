@@ -252,8 +252,8 @@ if __name__ == "__main__":
     m=auto.getnumber()
     auto.gettodaylist()
     #回复 
-    sj = random.randint(43,64)
-    auto.debug('总共需回复' + str(sj) + '个')
+    sj = random.randint(53,78)
+    auto.debug('本次总共需回复' + str(sj) + '个')
     while n<sj and suc is False:
         try: 
             auto.debug("当前在第"+str(n+1)+'个。')
@@ -261,7 +261,7 @@ if __name__ == "__main__":
             auto.browse()
             auto.getreply()
             auto.getmatch()
-            sleeptime=random.randint(100,400)
+            sleeptime=random.randint(110,400)
             au=auto.postreply()
             if au=='回复成功':
                 auto.debug('回复成功')
