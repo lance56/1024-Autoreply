@@ -151,9 +151,9 @@ class Autoreply:
         get=requests.get(self.geturl,headers=self.headers,cookies=self.cookies)
         sleep(2)
         get=get.text.encode('iso-8859-1').decode('gbk')
-        pat='<h4>.*</h4>'
+        pat='<b>本頁主題:</b> .*</td>'
         res=re.search(pat,get)
-        res=res.group(0).replace('<h4>','').replace('</h4>','')
+        res=res.group(0).replace('<b>本頁主題:</b> ','').replace('</td>','')
         res='Re:'+res
         self.res=res
         #print(res)
@@ -252,7 +252,7 @@ if __name__ == "__main__":
     m=auto.getnumber()
     auto.gettodaylist()
     #回复 
-    sj = random.randint(53,78)
+    sj = random.randint(57,78)
     auto.debug('本次总共需回复' + str(sj) + '个')
     while n<sj and suc is False:
         try: 
