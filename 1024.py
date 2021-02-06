@@ -126,10 +126,11 @@ class Autoreply:
         try:
             for data in self.black_list:
                 self.match.remove(data)
-            print('移除成功')    
+            auto.debug('移除成功')    
         except:
-            print('移除失败，知道因为啥。。。')
-            pass
+            auto.debug('移除失败，知道因为啥。。。')
+            #pass
+            suc=True
 
     def getonelink(self):
         geturl=''
