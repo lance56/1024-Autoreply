@@ -129,6 +129,7 @@ class Autoreply:
             auto.debug('移除成功')    
         except:
             auto.debug('移除失败，知道因为啥。。。')
+            auto.debug('退出程序')
             #pass
             quit()
 
