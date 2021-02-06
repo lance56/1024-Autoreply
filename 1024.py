@@ -126,6 +126,7 @@ class Autoreply:
         try:
             for data in self.black_list:
                 self.match.remove(data)
+            print('移除成功')    
         except:
             print('移除失败，知道因为啥。。。')
             pass
@@ -252,7 +253,7 @@ if __name__ == "__main__":
     m=auto.getnumber()
     auto.gettodaylist()
     #回复 
-    sj = random.randint(64,83)
+    sj = random.randint(37,73)
     auto.debug('本次总共需回复' + str(sj) + '个')
     while n<sj and suc is False:
         try: 
@@ -261,7 +262,7 @@ if __name__ == "__main__":
             auto.browse()
             auto.getreply()
             auto.getmatch()
-            sleeptime=random.randint(110,380)
+            sleeptime=random.randint(110,420)
             au=auto.postreply()
             if au=='回复成功':
                 auto.debug('回复成功')
