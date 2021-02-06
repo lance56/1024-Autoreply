@@ -130,7 +130,7 @@ class Autoreply:
         except:
             auto.debug('移除失败，知道因为啥。。。')
             #pass
-            suc=True
+            quit()
 
     def getonelink(self):
         geturl=''
