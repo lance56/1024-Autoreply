@@ -125,6 +125,7 @@ class Autoreply:
         try:
             for data in black_list:
                 self.match.remove(data)
+            auto.debug('移除成功，回复任务开始') 
         except:
             auto.debug('移除失败，知道因为啥。。。')
             #pass
@@ -262,7 +263,7 @@ if __name__ == "__main__":
             auto.browse()
             auto.getreply()
             auto.getmatch()
-            sleeptime=random.randint(1024,2048)
+            sleeptime=random.randint(90,380)
             au=auto.postreply()
             if au=='回复成功':
                 auto.debug('回复成功')
