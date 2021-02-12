@@ -255,7 +255,7 @@ if __name__ == "__main__":
     m=auto.getnumber()
     auto.gettodaylist()
     #回复 
-    sj = random.randint(55,76)
+    sj = random.randint(65,83)
     auto.debug('本次总共需回复' + str(sj) + '个')
     while n<sj and suc is False:
         try: 
